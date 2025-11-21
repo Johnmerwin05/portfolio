@@ -1,6 +1,6 @@
 export interface ProjectType {
   name: string;
-  project_link: string;
+  project_link?: string;
   project_logo: string;
   description: string;
   long_description: string;

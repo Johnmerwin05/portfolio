@@ -24,7 +24,7 @@ const Hero = () => {
                             data-aos-delay="800"
                             data-aos-duration="500"
                         >
-                            I'm a{" "}
+                           I&apos;m a{" "}
                             <span className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                                 Software Developer
                             </span>
