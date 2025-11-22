@@ -36,7 +36,7 @@ export default function Skills() {
             key={category}
             className="h-full pb-3 sm:p-0 rounded-xl
                        border border-transparent
-                       dark:bg-[#1f1f1f] bg-white
+                       dark:bg-[#31363f] bg-white
                        hover:border-blue-500/30
                        hover:dark:border-blue-400/30
                        transition-all duration-500 transform
