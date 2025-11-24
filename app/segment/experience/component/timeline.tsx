@@ -1,80 +1,110 @@
-import { Card } from "@/components/ui/card";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle, faBriefcase, faGraduationCap, faStar } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
+"use client"
 
-const Timeline = ({ events }: any) => {
-  const getIcon = (eventType: string) => {
-    switch (eventType) {
-      case "work":
-        return faBriefcase;
-      case "education":
-        return faGraduationCap;
-      default:
-        return faStar;
-    }
-  };
+import { Separator } from "@radix-ui/react-separator"
 
+import { Badge } from "@/components/ui/badge"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+interface Event {
+  title: string
+  sub_title: string
+  date: string
+  description: string | string[]
+  technology: string[]
+}
+
+interface TimelineProps {
+  events: Event[]
+}
+
+const Timeline = ({ events }: TimelineProps) => {
   return (
-    <div className="relative mx-auto pt-8 pb-36 overflow-x-hidden">
-      {/* Gradient Timeline Line */}
-      <div className="absolute left-5 md:left-1/2 top-0 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-500"></div>
+    <div className="relative w-full p-0 mx-auto space-y-16 overflow-x-hidden sm:p-16">
+      {/* Center Line */}
+      <div className="absolute top-0 w-0.5 rounded h-full transform -translate-x-1/2 bg-blue-500 left-1/2"></div>
 
-      {/* Timeline Events */}
-      <div className="space-y-12 md:space-y-16">
-        {events.map((event: any, index: number) => (
+      {events.map((event, index) => {
+        const isLeft = index % 2 === 0
+
+        return (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center justify-start md:justify-between md:space-x-6 relative"
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            className={`relative flex flex-col md:flex-row items-start ${
+              isLeft ? "md:justify-start" : "md:justify-end"
+            }`}
+            data-aos={isLeft ? "fade-right" : "fade-left"}
             data-aos-delay={200 + index * 100}
             data-aos-duration="600"
           >
-            {/* Timeline Dot with Icon */}
-            <div className="absolute -left-3 md:left-1/2 top-0 transform md:-translate-x-1/2 mt-4 md:mt-16 z-10">
-              <div className="relative flex justify-center items-center">
-                <FontAwesomeIcon
-                  icon={faCircle}
-                  className="text-blue-500 dark:text-purple-400 text-xl animate-pulse"
-                />
-                <span className="absolute text-white text-xs md:text-sm">{event.icon}</span>
-              </div>
+            {/* Circle connecting to center line */}
+            <div className="absolute z-10 p-1 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full dark:bg-gray-950 left-1/2 top-6 md:top-1/2">
+              <div className="w-5 h-5 bg-blue-500 border-2 border-white rounded-full dark:border-gray-950"></div>
             </div>
 
             {/* Event Card */}
-            <div className="md:w-1/2 w-full md:pl-0 md:pr-0 mb-4 md:mb-0 rounded-xl">
-              <Card className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out w-full bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700">
-                <h3 className="text-2xl font-semibold mb-2">{event.title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{event.date}</p>
-                {Array.isArray(event.description) ? (
-                  <ul className="list-disc pl-4 mt-2 text-sm space-y-1">
-                    {event.description.map((bullet: string, idx: number) => (
-                      <li key={idx}>{bullet}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="mt-2 text-gray-700 dark:text-gray-200">{event.description}</p>
-                )}
+            <div
+              className={`w-full mt-[38px] sm:mt-0 md:w-1/2 ${
+                isLeft
+                  ? "md:pr-8 text-left md:text-left"
+                  : "md:pl-8 text-left md:text-left"
+              }`}
+            >
+              <Card className="p-4 transition-all duration-200 border rounded-sm shadow-sm dark:border-gray-700 dark:bg-gray-950">
+                <CardHeader>
+                  {/* Title (same as Project card) */}
+                  <CardTitle className="text-xl font-semibold text-gray-900 dark:text-white">
+                    {event.title}
+                    <div className="text-sm font-medium">{event.sub_title}</div>
+                  </CardTitle>
+
+                  {/* Date (same styling as the small description in Project card) */}
+                  <CardDescription className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                    {event.date}
+                  </CardDescription>
+
+                  {/* Technology Badges */}
+                  <div>
+                    <div className="flex flex-wrap gap-2 mt-5">
+                      {event.technology?.map((tech, i) => (
+                        <Badge key={i} variant="secondary">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+
+                    <Separator
+                      orientation="horizontal"
+                      className="h-[0.9px] my-4 bg-gray-300"
+                    />
+                  </div>
+                </CardHeader>
+
+                <CardContent className="flex flex-col gap-3">
+                  {Array.isArray(event.description) ? (
+                    <ul className="pl-5 space-y-3 text-sm text-gray-700 list-disc dark:text-gray-300">
+                      {event.description.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-gray-700 dark:text-gray-300">
+                      {event.description}
+                    </p>
+                  )}
+                </CardContent>
               </Card>
             </div>
-
-            {/* Image */}
-            <div className="md:w-1/2 w-full flex justify-center items-center">
-              {event.image && (
-                <Image
-                  src={event.image}
-                  alt={event.title}
-                  width={400}
-                  height={250}
-                  className="rounded-xl shadow-lg object-cover w-full max-w-md"
-                />
-              )}
-            </div>
           </div>
-        ))}
-      </div>
+        )
+      })}
     </div>
-  );
-};
+  )
+}
 
-export default Timeline;
+export default Timeline

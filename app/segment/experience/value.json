@@ -1,7 +1,8 @@
 [
   {
     "icon": "🛠️",
-    "title": "Department of Social Welfare and Development IV-A - Computer Programmer III (Fullstack Developer)",
+    "title": "DSWD Region IV-A",
+    "sub_title": "Computer Programmer III (Fullstack Developer)",
     "date": "Sept 2025 - Present",
     "description": [
       "In charge of development of IPPMIS System Web Application of FO Based",
@@ -11,11 +12,13 @@
       "Utilized Git for project collaboration and version control.",
       "Collaborated with QA and PMs in Agile sprints, ensuring feature quality through daily meetings."
     ],
-    "image": "/images/exp/DSWD.png"
+    "image": "/images/exp/DSWD.png",
+    "technology": ["Laravel", "VueJS", "MySQL", "Tailwind", "IIS"]
   },
   {
     "icon": "🛠️",
-    "title": "PETNET Inc. - Backend Developer",
+    "title": "PETNET Inc.",
+    "sub_title": "Backend Developer",
     "date": "Feb 2025 - Sept 2025",
     "description": [
       "Developed and maintained RESTful APIs to support various web and mobile applications.",
@@ -26,11 +29,13 @@
       "Designed ERDs and optimized databases for performance and scalability.",
       "Expertise in multiple programming languages and frameworks including PHP, Typescript, Java, and framework such as React, Next, Vue, Nuxt, Laravel, NodeJS."
     ],
-    "image": "/images/exp/PETNET.png"
+    "image": "/images/exp/PETNET.png",
+    "technology": ["Laravel", "VueJS", "MySQL", "Tailwind", "IIS"]
   },
   {
     "icon": "🛠️",
-    "title": "Datalogic Systems Corp - Fullstack Developer ",
+    "title": "Datalogic Systems Corp",
+    "sub_title": "Fullstack Developer",
     "date": "Apr 2023 - Feb 2025",
     "description": [
       "Maintained and implemented updates in the existing Point of Sale System and optimized its performance",
@@ -39,6 +44,7 @@
       "Developed RESTful Api's to different frontend applications.",
       "Collaborated with other developers using Git, actively following the guidance of our seniors and the manager."
     ],
-    "image": "/images/exp/DSC.png"
+    "image": "/images/exp/DSC.png",
+    "technology": ["Laravel", "VueJS", "MySQL", "Tailwind", "IIS"]
   }
 ]

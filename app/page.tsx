@@ -1,44 +1,49 @@
-"use client";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { useTheme } from "next-themes"; 
-import {GlobalStore} from '@/app/GlobalStore'
+"use client"
 
-import Hero from "@/app/segment/Hero";
-import Porfolio from "@/app/segment/portfolio/page";
-import Experience from "@/app/segment/experience/page";
-import Skills from "@/app/segment/skills/page";
-import Footer from "@/app/segment/footer/page";
-import Certifications from "./segment/certifications/page";
+import AOS from "aos"
+
+import "aos/dist/aos.css"
+import { useEffect } from "react"
+import { useTheme } from "next-themes"
+
+import { GlobalStore } from "@/app/GlobalStore"
+import Hero from "@/app/segment/Hero"
+import Experience from "@/app/segment/experience/page"
+import Footer from "@/app/segment/footer/page"
+import Porfolio from "@/app/segment/portfolio/page"
+import Skills from "@/app/segment/skills/page"
+
+import Certifications from "./segment/certifications/page"
 
 export default function IndexPage() {
-  const { theme } = useTheme(); // Get the current theme from next-themes
-  const {set_is_dark} = GlobalStore();
+  const { theme } = useTheme() // Get the current theme from next-themes
+  const { set_is_dark } = GlobalStore()
   // Log theme changes to the console
   useEffect(() => {
-    if(theme === "dark"){
+    if (theme === "dark") {
       set_is_dark(true)
-    }else{
+    } else {
       set_is_dark(false)
     }
-    console.log(`Current theme: ${theme === "dark" ? "Dark mode" : "Light mode"}`);
-  }, [theme]); // This will run whenever the theme changes
+    console.log(
+      `Current theme: ${theme === "dark" ? "Dark mode" : "Light mode"}`
+    )
+  }, [theme]) // This will run whenever the theme changes
 
   useEffect(() => {
     AOS.init({
       duration: 2000,
-    });
-  }, []);
+    })
+  }, [])
 
   return (
-    <div className="h-full w-full">
+    <div className="w-full h-full">
       <Hero />
       <Porfolio />
       <Experience />
       <Skills />
-      <Certifications/>
-      <Footer/>
+      <Certifications />
+      {/* <Footer /> */}
     </div>
-  );
+  )
 }

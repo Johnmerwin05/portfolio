@@ -1,4 +1,5 @@
 import "@/styles/globals.css"
+import { useEffect } from "react"
 import { Metadata } from "next"
 
 import { siteConfig } from "@/config/site"
@@ -7,7 +8,6 @@ import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
-import { useEffect } from "react"
 
 export const metadata: Metadata = {
   title: {
@@ -35,15 +35,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body
-          className={cn(
-            " font-sans antialiased",
-            fontSans.variable
-          )}
-        >
+        <body className={cn(" font-sans antialiased", fontSans.variable)}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="h-screen w-screen ">
-              <SiteHeader />
+            <div className="w-auto h-screen">
+              {/* <SiteHeader /> */}
               {children}
             </div>
             <TailwindIndicator />
