@@ -3,19 +3,13 @@
 import React, { useEffect, useState } from "react"
 import { faCertificate } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import AOS from "aos"
 
-import "aos/dist/aos.css"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import certificationData from "@/app/segment/certifications/values.json"
 
 export default function Certifications() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-
-  useEffect(() => {
-    AOS.refresh()
-  }, [])
 
   return (
     <div className="container h-auto pb-10" id="certifications">
@@ -25,6 +19,7 @@ export default function Certifications() {
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="800"
+        data-aos-offset="200"
       >
         <div className="flex flex-row items-center gap-3 uppercase">
           <FontAwesomeIcon icon={faCertificate} className="text-violet-500" />

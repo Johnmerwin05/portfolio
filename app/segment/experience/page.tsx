@@ -1,9 +1,7 @@
 import React, { useEffect } from "react"
 import { faCode, faTimeline } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import AOS from "aos"
 
-import "aos/dist/aos.css"
 import { Badge } from "@/components/ui/badge"
 import Timeline from "@/app/segment/experience/component/timeline"
 import events from "@/app/segment/experience/value.json"
@@ -32,9 +30,6 @@ function getTotalExperience() {
 
 export default function Experience() {
   const { years, months } = getTotalExperience()
-  useEffect(() => {
-    AOS.refresh()
-  }, [])
 
   return (
     <div className="container pt-8 sm:pb-28" id="experience">
@@ -43,7 +38,7 @@ export default function Experience() {
         className="flex flex-col items-center justify-center gap-3 mt-20 mb-5 sm:mt-0 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
         data-aos="fade-up"
         data-aos-delay="100"
-        data-aos-duration="800"
+        data-aos-offset="200"
       >
         <div className="flex flex-row items-center gap-3 uppercase">
           <FontAwesomeIcon icon={faTimeline} className="text-violet-500" />

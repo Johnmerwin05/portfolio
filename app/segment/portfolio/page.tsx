@@ -3,9 +3,7 @@
 import React, { useEffect } from "react"
 import { faCode } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import AOS from "aos"
 
-import "aos/dist/aos.css"
 import {
   Accordion,
   AccordionContent,
@@ -25,9 +23,6 @@ import { Separator } from "@/components/ui/separator"
 import ProjectValues from "./values/project_values.json"
 
 export default function Portfolio() {
-  useEffect(() => {
-    AOS.refresh()
-  }, [])
   return (
     <div className="flex flex-col w-full h-auto pt-2 pb-28" id="portfolio">
       <div className="overflow-hidden md:p-6">
@@ -38,6 +33,7 @@ export default function Portfolio() {
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="800"
+            data-aos-offset="200"
           >
             <div className="flex flex-row items-center gap-3 uppercase">
               <FontAwesomeIcon icon={faCode} className="text-violet-500" />
