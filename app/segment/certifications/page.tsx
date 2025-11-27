@@ -17,6 +17,9 @@ export default function Certifications() {
       <div
         className="flex flex-col items-center justify-center gap-3 mt-20 sm:mt-0 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
         data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="800"
+        data-aos-offset="200"
       >
         <div className="flex flex-row items-center gap-3 uppercase">
           <FontAwesomeIcon icon={faCertificate} className="text-violet-500" />
@@ -35,6 +38,8 @@ export default function Certifications() {
             className="transition-all duration-200 border rounded-sm cursor-pointer hover:shadow-lg"
             onClick={() => setSelectedImage(cert.image)}
             data-aos="fade-up"
+            data-aos-delay={100 + index * 100}
+            data-aos-duration="800"
           >
             <CardContent className="p-4">
               <div className="flex flex-col items-center gap-3 text-center">

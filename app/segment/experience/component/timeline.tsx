@@ -39,6 +39,8 @@ const Timeline = ({ events }: TimelineProps) => {
               isLeft ? "md:justify-start" : "md:justify-end"
             }`}
             data-aos={isLeft ? "fade-right" : "fade-left"}
+            data-aos-delay={100 + index * 100}
+            data-aos-duration="600"
           >
             {/* Circle connecting to center line */}
             <div className="absolute z-10 p-1 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full dark:bg-gray-950 left-1/2 top-6 md:top-1/2">
