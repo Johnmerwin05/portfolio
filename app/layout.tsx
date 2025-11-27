@@ -40,7 +40,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="w-auto h-screen">
               <SiteHeader />
-              <AosWrapper />
               {children}
             </div>
             <TailwindIndicator />
