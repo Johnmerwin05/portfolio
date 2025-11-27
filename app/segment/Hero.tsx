@@ -10,17 +10,22 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="container relative flex flex-col h-full pt-16 overflow-hidden sm:pt-36 sm:pl-28 sm:pe-28"
+      className="container relative flex flex-col h-full pt-16 overflow-hidden sm:pt-16 sm:pl-28 sm:pe-28"
     >
       <div className="flex flex-col-reverse items-center justify-between gap-4 sm:flex-row">
         {/* TEXT */}
         <div className="relative z-10 sm:mt-[-50px] mt-[-10px] flex flex-col gap-4 text-center sm:w-2/3 sm:text-left">
-          <span className="text-sm font-semibold text-violet-500">
+          <span
+            className="text-sm font-semibold text-violet-500"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             Software Developer
           </span>
           <h1
             className="text-4xl font-extrabold tracking-tight text-black sm:text-4xl dark:text-gray-200"
             data-aos="fade-right"
+            data-aos-delay="200"
           >
             Hello, I&apos;m
             <br />
