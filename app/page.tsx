@@ -13,6 +13,7 @@ import Footer from "@/app/segment/footer/page"
 import Porfolio from "@/app/segment/portfolio/page"
 import Skills from "@/app/segment/skills/page"
 
+import { BgParticles } from "./particles"
 import Certifications from "./segment/certifications/page"
 
 export default function IndexPage() {
@@ -35,9 +36,11 @@ export default function IndexPage() {
       duration: 2000,
     })
   }, [])
+  const { is_dark } = GlobalStore()
 
   return (
     <div className="w-full h-full">
+      <BgParticles key={is_dark.toString()} />
       <Hero />
       <Porfolio />
       <Experience />

@@ -7,7 +7,7 @@ import Timeline from "@/app/segment/experience/component/timeline"
 import events from "@/app/segment/experience/value.json"
 
 function getTotalExperience() {
-  const startDate = new Date("2023-04-24")
+  const startDate = new Date("2023-03-01")
   const now = new Date()
 
   let years = now.getFullYear() - startDate.getFullYear()
@@ -41,7 +41,7 @@ export default function Experience() {
         data-aos-duration="800"
       >
         <div className="flex flex-row items-center gap-3 uppercase">
-          <FontAwesomeIcon icon={faTimeline} />
+          <FontAwesomeIcon icon={faTimeline} className="text-violet-500" />
           <p>Experience</p>
           <Badge variant="secondary">
             {years} years & {months} months

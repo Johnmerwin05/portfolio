@@ -21,7 +21,7 @@ export default function Certifications() {
         data-aos-duration="800"
       >
         <div className="flex flex-row items-center gap-3 uppercase">
-          <FontAwesomeIcon icon={faCertificate} />
+          <FontAwesomeIcon icon={faCertificate} className="text-violet-500" />
           <p>Certifications</p>
           <Badge variant="secondary">
             {certificationData.certifications.length} Documents

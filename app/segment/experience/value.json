@@ -13,38 +13,83 @@
       "Collaborated with QA and PMs in Agile sprints, ensuring feature quality through daily meetings."
     ],
     "image": "/images/exp/DSWD.png",
-    "technology": ["Laravel", "VueJS", "MySQL", "Tailwind", "IIS"]
+    "technology": [
+      "Laravel",
+      "NodeJS",
+      "ReactJS",
+      "VueJS",
+      "MySQL",
+      "Tailwind",
+      "IIS",
+      "Git",
+      "Github",
+      "ShadCN/UI",
+      "Agile",
+      "SCRUM"
+    ]
   },
   {
     "icon": "🛠️",
-    "title": "PETNET Inc.",
-    "sub_title": "Backend Developer",
-    "date": "Feb 2025 - Sept 2025",
+    "title": "SMPIC",
+    "sub_title": "Systems Developer - Fullstack Developer",
+    "date": "Sept 2023 - Sept 2025",
     "description": [
-      "Developed and maintained RESTful APIs to support various web and mobile applications.",
-      "Collaborated with both local and international clients, including Ukraine, to deliver high-quality software solutions.",
-      "Built scalable, responsive web apps for performance and user satisfaction.",
+      "Develop full-stack apps with Laravel, MySQL, Vue, Inertia.js, and shadcn/ui, delivering scalable backends and component-driven UIs.",
+      "Build reusable Vue components with Tailwind CSS and optimized state management",
+      "Design normalized schemas, index data, and optimize queries via Eloquent/Query Builder",
       "Developed RESTful APIs to ensure scalability and efficient communication between services.",
-      "Documented API specifications and usage guidelines, facilitating easier onboarding for new team members and external developers.",
-      "Designed ERDs and optimized databases for performance and scalability.",
-      "Expertise in multiple programming languages and frameworks including PHP, Typescript, Java, and framework such as React, Next, Vue, Nuxt, Laravel, NodeJS."
+      "Collaborate with teams and tech leads on requirements, code reviews, and best practices.",
+      "Follow Agile/Scrum workflows, perform testing, debugging, and performance tuning."
     ],
     "image": "/images/exp/PETNET.png",
-    "technology": ["Laravel", "VueJS", "MySQL", "Tailwind", "IIS"]
+    "technology": [
+      "Laravel",
+      "VueJS",
+      "MySQL",
+      "Tailwind",
+      "Git",
+      "Github",
+      "ShadCN/UI",
+      "Agile",
+      "SCRUM"
+    ]
   },
   {
     "icon": "🛠️",
-    "title": "Datalogic Systems Corp",
-    "sub_title": "Fullstack Developer",
-    "date": "Apr 2023 - Feb 2025",
+    "title": "R-NET Wired Internet Services",
+    "sub_title": "Back-end Developer - Payment Gateway Integration",
+    "date": "May 2023 - Aug 2023",
     "description": [
-      "Maintained and implemented updates in the existing Point of Sale System and optimized its performance",
-      "Developed a web-based Kitchen Display System for restaurants to streamline order management.",
-      "Developed and maintained order taking system for restaurants to improve order accuracy and efficiency.",
-      "Developed RESTful Api's to different frontend applications.",
-      "Collaborated with other developers using Git, actively following the guidance of our seniors and the manager."
+      "Successfully integrated the Payment Gateway into the R-NET Wired Internet Services CRM, enhancing system capabilities.",
+      "Ensured a seamless and efficient user experience for customers through meticulous attention to detail.",
+      "Demonstrated exceptional skill and dedication in successfully completing the project.",
+      "Contributed to the professional growth and efficiency of the team through commitment to excellence.",
+      "Provided a formal acknowledgment of achievement, highlighting significant value added to the organization."
     ],
     "image": "/images/exp/DSC.png",
-    "technology": ["Laravel", "VueJS", "MySQL", "Tailwind", "IIS"]
+    "technology": ["Laravel", "Xendit", "CRM"]
+  },
+  {
+    "icon": "🛠️",
+    "title": "Relaunch Advertising",
+    "sub_title": "Web Developer",
+    "date": "March 2023 - Aug 2023",
+    "description": [
+      "Integrated Stripe and PayPal payment gateways into the R-NET Wired Internet Services CRM using WordPress, Elementor, and Shopify, enhancing transaction capabilities.",
+      "Designed and optimized user interfaces with Figma and Elementor to ensure a seamless and efficient customer experience.",
+      "Developed and customized web functionalities on WordPress and Wix to support secure online payments and CRM operations.",
+      "Collaborated with the team to implement best practices in e-commerce integration, improving system efficiency and reliability.",
+      "Delivered a professional and fully functional online payment solution, adding significant value to the organization and its customers."
+    ],
+    "image": "/images/exp/DSC.png",
+    "technology": [
+      "Wordpress",
+      "Figma",
+      "Elementor",
+      "Stripe",
+      "PayPal",
+      "Wix",
+      "Shopify"
+    ]
   }
 ]

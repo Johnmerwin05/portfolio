@@ -29,13 +29,13 @@ export default function Portfolio() {
         <div className="sm:container">
           {/* Header */}
           <div
-            className="flex flex-col items-center justify-center gap-3 mt-20 sm:mt-0 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
+            className="flex flex-col items-center justify-center gap-3 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="800"
           >
             <div className="flex flex-row items-center gap-3 uppercase">
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon icon={faCode} className="text-violet-500" />
               <p>Portfolio</p>
               <Badge variant="secondary">{ProjectValues.length} Projects</Badge>
             </div>
@@ -57,7 +57,7 @@ export default function Portfolio() {
                   </CardTitle>
 
                   {/* SHORT DESCRIPTION */}
-                  <CardDescription className="mb-6">
+                  <CardDescription className="">
                     <div className="flex flex-col items-start gap-2 text-sm md:flex-row md:items-center">
                       <span>{project.platform}</span>
                       <Separator
@@ -81,12 +81,16 @@ export default function Portfolio() {
                     </div>
                   </CardDescription>
 
-                  <CardDescription className="text-xs text-gray-400">
-                    {project.higlights}
+                  <CardDescription className="text-xs text-gray-400 ">
+                    <ul className="ml-4 space-y-1 list-disc">
+                      {project.higlights?.map((highlight, i) => (
+                        <li key={i}>{highlight}</li>
+                      ))}
+                    </ul>
                   </CardDescription>
                 </CardHeader>
 
-                <CardContent className="flex flex-col gap-4 mt-1">
+                <CardContent className="flex flex-col gap-4">
                   {/* TECHNOLOGY BADGES */}
                   <div className="flex flex-wrap gap-2">
                     {project.technology?.map((tech, i) => (

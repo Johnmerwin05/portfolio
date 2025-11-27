@@ -27,7 +27,7 @@ const Timeline = ({ events }: TimelineProps) => {
   return (
     <div className="relative w-full p-0 mx-auto space-y-16 overflow-x-hidden sm:p-16">
       {/* Center Line */}
-      <div className="absolute top-0 w-0.5 rounded h-full transform -translate-x-1/2 bg-blue-500 left-1/2"></div>
+      <div className="absolute top-0 w-0.5 rounded h-full transform -translate-x-1/2 bg-violet-500 left-1/2"></div>
 
       {events.map((event, index) => {
         const isLeft = index % 2 === 0
@@ -44,7 +44,7 @@ const Timeline = ({ events }: TimelineProps) => {
           >
             {/* Circle connecting to center line */}
             <div className="absolute z-10 p-1 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full dark:bg-gray-950 left-1/2 top-6 md:top-1/2">
-              <div className="w-5 h-5 bg-blue-500 border-2 border-white rounded-full dark:border-gray-950"></div>
+              <div className="w-5 h-5 border-2 border-white rounded-full bg-violet-500 dark:border-gray-950"></div>
             </div>
 
             {/* Event Card */}

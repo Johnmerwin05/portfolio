@@ -1,28 +1,16 @@
 {
   "certifications": [
     {
-      "name": "Microfrontend ReactJS",
-      "date": "January 2024",
-      "description": "Completed a hands-on course on building scalable applications using Microfrontend architecture with ReactJS.",
-      "image": "/images/certificates/microfrontend-reactjs.png"
+      "name": "Search Engine Optimization (SEO) - Online Course",
+      "date": "September 2022",
+      "description": "Completed a comprehensive online course on Search Engine Optimization (SEO), gaining practical knowledge in improving website visibility, optimizing content, and driving organic traffic effectively.",
+      "image": "/images/certificates/seo.jpg"
     },
     {
-      "name": "NodeJS Express and MongoDB",
+      "name": "How to be you po: Career in Cybersecurity",
       "date": "January 2024",
-      "description": "Learned backend development using Node.js, Express, and MongoDB, including REST APIs and database handling.",
-      "image": "/images/certificates/nodejs.png"
-    },
-    {
-      "name": "Anti Money Laundering (AML) Training",
-      "date": "January 2024",
-      "description": "Completed compliance training covering AML regulations, risk assessment, and proper reporting procedures.",
-      "image": "/images/certificates/AMLA.png"
-    },
-    {
-      "name": "Effective Communication in the Workplace",
-      "date": "January 2024",
-      "description": "Training focused on improving professional communication, collaboration, and interpersonal workplace skills.",
-      "image": "/images/certificates/Effective.png"
+      "description": "Completed an insightful course on building a career in Cybersecurity, gaining foundational knowledge in security concepts, threat analysis, and practical strategies for protecting digital systems.",
+      "image": "/images/certificates/dict.jpg"
     }
   ]
 }

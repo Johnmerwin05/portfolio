@@ -1,47 +1,5 @@
 [
   {
-    "name": "Ordering System",
-    "project_link": "",
-    "project_logo": "images/system.png",
-    "description": "Laravel + VueJS + MSSQL + Tailwind",
-    "long_description": "Ordering System for a restaurant. It consist of 4 user roles: Admin, Manager, Cashier and Customer, Aims to creates a list of orders to a restaurant through a web system. It also has Point of Sale (POS) with thermal printing for physical transactions and inventory for managing stocks. It has responsive design to be able to be used in any kind of devices like mobile, tablet, laptop, and pc.",
-    "technology": ["Laravel", "VueJS", "MySQL", "Tailwind", "IIS"],
-    "platform": ["Web"],
-    "status": ["Completed"],
-    "type": "Full time project",
-    "role": ["Web Developer"],
-    "source_code": [],
-    "images_path": "/images/ordering",
-    "images_num_web": 2,
-    "higlights": [
-      "Built and deployed the project from the ground up",
-      "Developed Scalable Codebase and Modular Architecture",
-      "Deployed the application on IIS, utilizing an in-house server to make it publicly accessible"
-    ],
-    "isWebFirst": true
-  },
-  {
-    "name": "POS System",
-    "project_logo": "images/system.png",
-    "description": ".Net + C# + WPF",
-    "long_description": "A Point of Sale System designed for retail stores to manage sales transactions,inventory and generate reports.",
-    "technology": [".Net", "C#", "WPF"],
-    "platform": ["Desktop"],
-    "status": ["Completed"],
-    "type": "Full time project",
-    "role": ["Desktop App Developer"],
-    "source_code": [],
-    "images_path": "/images/pos",
-    "images_num_web": 2,
-    "higlights": [
-      "Built and deployed the project from the ground up",
-      "Developed to be used by retail stores nationwide",
-      "Beaureu of Internal Revenue accredited software",
-      "Deployed the application on premise server of the client"
-    ],
-    "isWebFirst": true
-  },
-  {
     "name": "IPPMIS",
     "project_link": "",
     "project_logo": "images/system.png",
@@ -49,18 +7,17 @@
     "long_description": "Integrated Personnel Payroll Management System designed to automate the employees payroll and provide robust solution to templates.",
     "technology": [
       "Laravel",
-      "ReactJS",
       "MySQL",
       "ReactJS",
+      "ShadCN UI",
       "Tailwind",
-      "Laravel-Inertia",
-      "Typescript",
-      "IIS"
+      "InertiaJS",
+      "Typescript"
     ],
     "platform": ["Web"],
     "status": ["Completed"],
     "type": "Full time project",
-    "role": ["Web Developer"],
+    "role": ["Full Stack Developer"],
     "source_code": [],
     "images_path": "/images/ippmis",
     "images_num_web": 2,
@@ -73,12 +30,109 @@
     "isWebFirst": true
   },
   {
-    "name": "Anti Scam App",
+    "name": "SIMASS",
+    "project_link": "",
+    "project_logo": "images/system.png",
+    "description": "Laravel + ReactJS + Typescript + ShadCN UI",
+    "long_description": "SIMASS is a comprehensive system designed to automate daily production processes across multiple modules. Each module handles specific aspects of production workflow, including task tracking, resource management, and process monitoring. The system provides real-time insights and reports to improve operational efficiency and reduce manual workload. Built with a responsive interface, SIMASS ensures seamless usability across mobile, tablet, and desktop devices.",
+    "technology": [
+      "Laravel",
+      "MSSQL",
+      "ReactJS",
+      "ShadCN UI",
+      "Tailwind",
+      "InertiaJS",
+      "Typescript"
+    ],
+    "platform": ["Web"],
+    "status": ["Completed"],
+    "type": "Full time project",
+    "role": ["Full Stack Developer"],
+    "source_code": [],
+    "images_path": "/images/ippmis",
+    "images_num_web": 2,
+    "higlights": [
+      "Developed and deployed SIMASS to automate daily production processes",
+      "Implemented multiple modules to streamline production workflow and monitoring",
+      "Enabled real-time tracking and reporting for production efficiency",
+      "Optimized the system for responsive use on mobile, tablet, and desktop devices"
+    ],
+    "isWebFirst": true
+  },
+  {
+    "name": "Scholar Management System",
+    "project_link": "",
+    "project_logo": "images/system.png",
+    "description": "Laravel + VueJS + MySQL + Tailwind",
+    "long_description": "A comprehensive Scholarship Management System designed to automate scholar assessments and streamline the tracking of financial assistance. The system enables scholarship applicants and active scholars to take exams online, with automated evaluation and result recording. It also includes a dedicated module for managing and documenting cash assistance releases, ensuring transparency and organized distribution records. The platform centralizes scholar profiles, exam results, and financial logs, providing administrators with an efficient tool to oversee the entire scholarship lifecycle.",
+    "technology": [
+      "Laravel",
+      "VueJS",
+      "MySQL",
+      "Tailwind",
+      "ShadCN UI",
+      "InertiaJS",
+      "Typescript"
+    ],
+    "platform": ["Web"],
+    "status": ["Completed"],
+    "type": "Freelance",
+    "role": ["Full Stack Developer"],
+    "source_code": [],
+    "images_path": "/images/ordering",
+    "images_num_web": 2,
+    "higlights": [
+      "Developed and launched the Scholarship Management System from scratch",
+      "Built automated online exams with real-time scoring",
+      "Implemented secure tracking for scholar cash assistance",
+      "Optimized the system for full mobile and desktop responsiveness"
+    ],
+    "isWebFirst": true
+  },
+  {
+    "name": "Resort Booking System",
+    "project_logo": "images/system.png",
+    "description": ".Net + C# + WPF",
+    "long_description": "A fully featured Resort Management System that allows clients to conveniently book accommodations online with real-time availability. The system integrates a secure payment gateway for smooth and reliable transactions. It also provides automated email and SMS notifications to keep clients informed about booking confirmations, payment status, and updates. Designed with a responsive interface, the platform ensures a seamless booking experience across mobile, tablet, and desktop devices.",
+    "technology": [
+      "Php",
+      "Bootstrap",
+      "MySQL",
+      "Jquery",
+      "Phpmyadmin",
+      "Xendit",
+      "MessageBird"
+    ],
+    "platform": ["Desktop"],
+    "status": ["Completed"],
+    "type": "Freelance",
+    "role": ["Full Stack Developer"],
+    "source_code": [],
+    "images_path": "/images/pos",
+    "images_num_web": 2,
+    "higlights": [
+      "Developed and launched an online Resort Management System",
+      "Implemented a booking module with integrated payment gateway",
+      "Added automated email and SMS notifications for bookings and updates",
+      "Optimized the platform for seamless use across all devices"
+    ],
+    "isWebFirst": true
+  },
+  {
+    "name": "Loan Management System",
     "project_link": "",
     "project_logo": "images/system.png",
     "description": "Flutter + Dart + Firebase",
-    "long_description": "An Anti Scam Mobile Application that allows users to live track other users during transactions to ensure legitimacy.",
-    "technology": ["Flutter", "Dart", "Firebase", "SupaBase", "Google API"],
+    "long_description": "A Loan Management System that allows clients to apply for loans online by submitting their required documents securely. The system provides an administrative interface where personnel can review, process, and manage loan applications efficiently. With automated tracking of application status and a responsive design, the platform ensures a smooth experience for both clients and staff across mobile, tablet, and desktop devices.",
+    "technology": [
+      "Laravel",
+      "VueJS",
+      "MySQL",
+      "ShadCN UI",
+      "Tailwind",
+      "InertiaJS",
+      "Typescript"
+    ],
     "platform": ["Mobile"],
     "status": ["Completed"],
     "type": "Freelance",
@@ -88,81 +142,78 @@
     "images_num_web": 0,
     "images_num_mobile": 5,
     "higlights": [
-      "Used to live track other user to ensure the legitimacy of the transaction",
-      "Implemented Firebase Authentication for secure user login and registration",
-      "Utilized SupaBase for efficient data storage and retrieval",
-      "Integrated Google API for enhanced app functionality"
+      "Developed and launched a Loan Management System for online enrollment",
+      "Enabled clients to submit loan applications with required document uploads",
+      "Implemented an admin module for processing and managing loan applications",
+      "Optimized the platform for responsive use on mobile, tablet, and desktop devices"
     ],
     "isWebFirst": true
   },
   {
-    "name": "Alumni System",
+    "name": "Dietary System",
     "project_link": "https://alumni-portal-rosy.vercel.app/",
     "project_logo": "images/system.png",
     "description": "SASS + NuxtJS + Tailwind",
-    "long_description": "An alumni system that allows graduates to connect, network, and engage with their alma mater through a web platform.",
-    "technology": ["SASS", "NuxtJS", "Tailwind", "Vercel"],
+    "long_description": "A Dietary Predicting System designed to assess users’ health and detect potential kidney problems. Based on the analysis, the system generates personalized diet guidelines to support better health and nutrition. The platform centralizes user profiles, health assessments, and diet recommendations, providing a comprehensive and accessible tool for managing dietary needs. It features a responsive interface to ensure usability across mobile, tablet, and desktop devices.",
+    "technology": [
+      "Php",
+      "Bootstrap",
+      "MySQL",
+      "Jquery",
+      "Phpmyadmin",
+      "Composer"
+    ],
     "platform": ["Web"],
-    "status": ["Active"],
+    "status": ["Completed"],
     "type": "Freelance",
     "role": ["Full Stack Developer"],
     "source_code": [],
     "images_path": "/images/plmun",
     "images_num_web": 7,
     "higlights": [
-      "Allows alumni to see job opennings and apply through the web platform",
-      "In charge of developing the Landing page and Alumni Directory",
-      "Collaborated with co-developer to ensure code quality and solutions aligned with development standards",
-      "Developed dynamic Analytics functionality that adapts to end-user input for insights and trends",
-      "Utilized a backend deployed on Vercel"
+      "Developed and deployed a Dietary Predicting System from scratch",
+      "Implemented a health detection module to identify potential kidney issues",
+      "Provided personalized diet guidelines based on user health data",
+      "Optimized the system for use across mobile, tablet, and desktop devices"
     ],
     "isWebFirst": true
   },
   {
-    "name": "HRdotnet-dayone",
+    "name": "Medical Appointment System",
     "project_link": "http://hrdotnet-dayone.intellismartinc.com:5173/",
     "project_logo": "images/system.png",
     "description": ".Net + React + Typescript",
-    "long_description": "A recruitment system designed to automate the hiring process.",
-    "technology": [
-      ".Net8",
-      "Crystal Reports",
-      "MSSQL",
-      "React",
-      "Mantine",
-      "TanStack Query",
-      "Typescript",
-      "IIS"
-    ],
+    "long_description": "A Medical Appointment System that allows clients to conveniently book appointments online and consult with healthcare professionals through the platform. The system also enables users to download their medical certificates directly, streamlining administrative processes. With centralized management for appointments, consultations, and patient records, the platform ensures efficiency, accuracy, and a user-friendly experience across mobile, tablet, and desktop devices.",
+    "technology": ["Php", "Bootstrap", "MySQL", "Jquery", "Phpmyadmin"],
     "platform": ["Web"],
     "status": ["Completed"],
-    "type": "Full time project",
-    "role": ["Web and Mobile Developer"],
+    "type": "Freelance",
+    "role": ["Full Stack Developer"],
     "source_code": [],
     "images_path": "/images/dayone",
     "images_num_web": 3,
     "higlights": [
-      "Built and deployed the project from the ground up",
-      "Developed Scalable Codebase and Modular Architecture",
-      "Collaborated with the senior developer to ensure code quality and solutions aligned with development standards",
-      "Deployed the application on IIS, utilizing an in-house server to make it publicly accessible"
+      "Developed and launched a Medical Appointment System for online bookings",
+      "Enabled clients to schedule appointments and conduct online consultations",
+      "Provided functionality to download medical certificates directly from the system",
+      "Optimized the platform for seamless use on mobile, tablet, and desktop devices"
     ],
     "isWebFirst": true
   },
   {
-    "name": "KichiEats",
+    "name": "Inventory Management System",
     "project_link": "https://kichieats.ph/",
     "project_logo": "images/system.png",
     "description": "Laravel + VueJS(Nuxt)",
-    "long_description": "Restaurant based ecommerce",
+    "long_description": "An Inventory Management System designed to simplify inventory tracking and stock management. The system generates QR codes for each item, allowing for quick scanning and accurate monthly inventory checks. It also provides real-time updates on stock levels, item details, and movement history. With a responsive interface, the platform ensures efficient and user-friendly management of inventory across mobile, tablet, and desktop devices.",
     "technology": [
-      "Laravel.11",
-      "Nuxt",
-      "Vuetify",
-      "AntDesign",
-      "SSR",
-      "SEO",
-      "AWS"
+      "Laravel",
+      "ReactJS",
+      "MySQL",
+      "TailwindCSS",
+      "InertiaJS",
+      "ShadCN UI",
+      "Typescript"
     ],
     "platform": ["Web"],
     "status": ["Active"],
@@ -172,216 +223,10 @@
     "images_path": "/images/kichi",
     "images_num_web": 1,
     "higlights": [
-      "In charge of maintenance and developing new functionalities",
-      "Collaborated directly with a Japanese client to ensure tasks were completed based on their requirements",
-      "Collaborated with the senior developer to ensure code quality and solutions aligned with development standards",
-      "Developed dynamic SEO functionality that adapts to end-user input for a restaurant platform",
-      "Utilized a backend deployed on AWS EC2 and a frontend with CI/CD integration"
-    ],
-    "isWebFirst": true
-  },
-  {
-    "name": "ExpenseTracker",
-    "project_link": "https://expenses-tracker-daneris.vercel.app/",
-    "project_logo": "images/system.png",
-    "description": "ReactJS + NodeJS + MongoDB + Typescript",
-    "long_description": "An Expenses Archiving Application that provides users with detailed analytics and insights.",
-    "technology": [
-      "NodeJS",
-      "ReactJS",
-      "MongoDB",
-      "ExpressJS",
-      "TanStack Query",
-      "Typescript",
-      "Mantine",
-      "Vite"
-    ],
-    "platform": ["Web"],
-    "status": ["Completed"],
-    "type": "Case Study(PoC)",
-    "role": ["Full Stack Developer"],
-    "source_code": [],
-    "images_path": "/images/et",
-    "images_num_web": 4,
-    "demo_accounts": [
-      { "role": "Admin", "username": "admin", "password": "12345678" },
-      { "role": "End-User", "username": "naruto", "password": "12345678" }
-    ],
-    "higlights": [
-      "A blazing-fast frontend capable of handling 100,000+ data entries",
-      "Implemented caching with server-side pagination using Zustand and TanStack Query",
-      "Implemented authentication and refresh tokens for enhanced security",
-      "Adopted a modular project structure and routing to facilitate collaborative development",
-      "Utilized Express and Mongoose to build a REST API with integrated Swagger for API docs",
-      "Deployed both frontend and backend applications using Vercel for fast and reliable hosting",
-      "Containerization using docker for frontend and backend ensuring compatibility to other devices",
-      "Utilized TypeScript across the codebase, ensuring type safety and improving maintainability"
-    ],
-    "isWebFirst": true
-  },
-
-  {
-    "name": "E-Palengke",
-    "project_link": "",
-    "project_logo": "images/system.png",
-    "description": "Laravel + VueJS + Vuetify + Ionic",
-    "long_description": "Nearby e-commerce geolocation and radius based. It consist of 4 user roles: Admin, Seller, Customer and Delivery. Aims to provide a convenient online shopping experience for homebound individuals, It also provides employment to local residents as foot-based delivery personnel, fostering income generation without any initial investment.",
-    "technology": [
-      "Laravel.10",
-      "MySQL",
-      "Websocket",
-      "Typescript",
-      "Javascript",
-      "PusherJS",
-      "VueJS.2",
-      "Vuetify",
-      "Vuex",
-      "Axios",
-      "Ionic/VueJS.3",
-      "Vite",
-      "Capacitor",
-      "Leaflet",
-      "Firebase(Push Notification)",
-      "Swal2"
-    ],
-    "platform": ["Web", "Mobile"],
-    "status": ["Completed"],
-    "type": "Acad Thesis",
-    "role": ["Full Stack Developer", "Project Lead"],
-    "source_code": [],
-    "images_path": "/images/e-palengke",
-    "images_num_web": 19,
-    "images_num_mobile": 6,
-    "demo_accounts": [
-      { "role": "Admin", "username": "admin", "password": "admin" },
-      { "role": "Customer", "username": "patrick", "password": "123" },
-      { "role": "Seller", "username": "thomas", "password": "123" },
-      { "role": "Delivery", "username": "antonio", "password": "123" }
-    ],
-    "higlights": [
-      "Implemented Dynamic end-user requirements based on administrator preferences",
-      "User role access is stored in the database for code maintainability and future upgrades",
-      "Used Laravel Passport for Secure User Authentication",
-      "Utilized PusherJS/Websockets for realtime orders",
-      "Utilized Laravel Eloquent ORM and Query Builder to enhance queries",
-      "Utilized Modern framework advantage to build cross platform development using Ionic/Vue",
-      "Implemented Firebase Push Notifications to enhance user convenience while awaiting orders"
-    ],
-    "isWebFirst": true
-  },
-  {
-    "name": "Disaster & Risk",
-    "project_link": "",
-    "project_logo": "images/system.png",
-    "description": "Laravel + VueJS + Vuetify",
-    "long_description": "Realtime Cloud Based Disaster and Risked Geospatial Management System. It consist of 2 user roles: End User and Admin.",
-    "technology": [
-      "Laravel.10",
-      "VueJS.3",
-      "Vite",
-      "Vuetify",
-      "Vuex",
-      "Axios",
-      "PusherJS",
-      "Leaflet"
-    ],
-    "platform": ["Web"],
-    "status": ["Completed"],
-    "type": "Freelance",
-    "role": ["Full Stack Developer"],
-    "source_code": [],
-    "images_path": "/images/cbdrgms",
-    "images_num_web": 11,
-    "higlights": [
-      "Utilized PusherJS/Websockets for realtime end user report that will reflect in vue leaflet map",
-      "Implement customizable icon that can be use in leaflet map pin like fire, traffic, typhoon etc",
-      "Utilized Vuetify and CSS for Responsive Web And Mobile Platform"
-    ],
-    "isWebFirst": true
-  },
-  {
-    "name": "Blockchain Voting",
-    "project_link": "",
-    "project_logo": "images/system.png",
-    "description": "Laravel + Vue + Vuetify + Solidity + PWA",
-    "long_description": "Implementation of Blockchain Technology in Student Council Voting System, I developed the PWA version (in the 'mobile' folder), I set up the backend using Laravel and the blockchain using the test network Ganache.  My case study partner developed the web version, The system consists of two user roles: admin for the web and end user for mobile (PWA).",
-    "technology": [
-      "Vue",
-      "Vuetify",
-      "Laravel",
-      "Solidity",
-      "Ganache",
-      "Blockchain Technology"
-    ],
-    "platform": ["Web", "Mobile"],
-    "status": ["Completed"],
-    "type": "Acad 4th Year Case Study",
-    "role": ["Full Stack Developer", "Project Lead"],
-    "source_code": [],
-    "images_path": "/images/bv",
-    "images_num_web": 5,
-    "images_num_mobile": 9,
-    "higlights": [
-      "Used solidity to create a smart contract for immutable voting",
-      "Utilized Ganache test network to store votes on the blockchain",
-      "Secured voting results by reading blockchain data and visualizing it with ApexCharts"
-    ],
-    "isWebFirst": false
-  },
-  {
-    "name": "WEBOMS",
-    "project_link": "",
-    "project_logo": "images/system.png",
-    "description": "jQuery + Bootstrap + PHP + Java Native Mobile",
-    "long_description": "Ordering System for a restaurant. It consist of 4 user roles: Admin, Manager, Cashier and Customer, Aims to creates a list of orders to a restaurant through a web system. It also has Point of Sale (POS) with thermal printing for physical transactions and inventory for managing stocks. It has responsive design to be able to be used in any kind of devices like mobile, tablet, laptop, and pc.",
-    "technology": [
-      "PHP",
-      "MySQL",
-      "jQuery",
-      "Bootstrap",
-      "TCPDF",
-      "Java Native Mobile",
-      "Volley",
-      "Glide"
-    ],
-    "platform": ["Web", "Mobile"],
-    "status": ["Completed"],
-    "type": "Acad 3rd Year Case Study",
-    "role": ["Full Stack Developer", "Project Lead"],
-    "source_code": [],
-    "images_path": "/images/weboms",
-    "images_num_web": 24,
-    "images_num_mobile": 8,
-    "demo_accounts": [
-      { "role": "Admin", "username": "admin", "password": "passsword" }
-    ],
-    "higlights": [
-      "Implemented PHP Mailer OTP to verify user accounts and filter out fake users",
-      "Use pie and bar graphs to represent the sales report for daily, weekly, and monthly data",
-      "Developed a native mobile app to integrate with the web system for user ordering convenience",
-      "Modules includes Inventory, POS, Top-up, Orders, Sales Report, Feedback and User Accounts",
-      "Seamless payments by integrating hardware RFID and updating user details in the database"
-    ],
-    "isWebFirst": true
-  },
-  {
-    "name": "Expenses Tracker",
-    "project_link": "",
-    "project_logo": "images/system.png",
-    "description": "Java Native Mobile + SQLITE",
-    "long_description": "Expenses tracker with Dynamic Analytics of expenses by date and category, it consist of 1 user role: End User",
-    "technology": ["Java Native Mobile", "SQLITE", "Any Chart"],
-    "platform": ["Mobile"],
-    "status": ["Completed"],
-    "type": "Acad 2nd Year Case Study",
-    "role": ["Full Stack Developer", "Project Lead"],
-    "source_code": [],
-    "images_path": "/images/cmt",
-    "images_num_web": 0,
-    "images_num_mobile": 9,
-    "higlights": [
-      "Used AnyChart for analytics of expenses by category and date using bar and pie graph",
-      "Used SQLITE for storing of expenses and category"
+      "Developed and launched an Inventory Management System from scratch",
+      "Implemented QR code generation for fast and accurate monthly inventory tracking",
+      "Enabled real-time stock monitoring and updates for all items",
+      "Optimized the system for seamless use on mobile, tablet, and desktop devices"
     ],
     "isWebFirst": true
   }

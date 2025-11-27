@@ -52,7 +52,7 @@ export default function Skills() {
         data-aos="fade-up"
       >
         <div className="flex flex-row items-center gap-3 uppercase">
-          <FontAwesomeIcon icon={faToolbox} />
+          <FontAwesomeIcon icon={faToolbox} className="text-violet-500" />
           <p>Tech Stack</p>
           <Badge variant="secondary">Flexible</Badge>
         </div>
