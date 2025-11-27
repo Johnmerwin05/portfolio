@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { faCode, faTimeline } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import AOS from "aos"
 
+import "aos/dist/aos.css"
 import { Badge } from "@/components/ui/badge"
 import Timeline from "@/app/segment/experience/component/timeline"
 import events from "@/app/segment/experience/value.json"
@@ -30,6 +32,9 @@ function getTotalExperience() {
 
 export default function Experience() {
   const { years, months } = getTotalExperience()
+  useEffect(() => {
+    AOS.refresh()
+  }, [])
 
   return (
     <div className="container pt-8 sm:pb-28" id="experience">

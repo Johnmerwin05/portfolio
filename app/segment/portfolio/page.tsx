@@ -1,9 +1,11 @@
 "use client"
 
-import React from "react"
+import React, { useEffect } from "react"
 import { faCode } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import AOS from "aos"
 
+import "aos/dist/aos.css"
 import {
   Accordion,
   AccordionContent,
@@ -23,6 +25,9 @@ import { Separator } from "@/components/ui/separator"
 import ProjectValues from "./values/project_values.json"
 
 export default function Portfolio() {
+  useEffect(() => {
+    AOS.refresh()
+  }, [])
   return (
     <div className="flex flex-col w-full h-auto pt-2 pb-28" id="portfolio">
       <div className="overflow-hidden md:p-6">
