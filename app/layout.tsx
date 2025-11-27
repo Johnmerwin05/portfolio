@@ -37,6 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en" suppressHydrationWarning>
         <head />
         <body className={cn(" font-sans antialiased", fontSans.variable)}>
+          <AosWrapper />
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="w-auto h-screen">
               <SiteHeader />
