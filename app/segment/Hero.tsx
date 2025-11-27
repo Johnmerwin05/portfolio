@@ -22,7 +22,7 @@ const Hero = () => {
             className="text-4xl font-extrabold tracking-tight text-black sm:text-4xl dark:text-gray-200"
             data-aos="fade-right"
           >
-            Hello, I'm
+            Hello, I&apos;m
             <br />
             john Merwin Cielo
           </h1>
