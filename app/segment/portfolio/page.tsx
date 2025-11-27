@@ -31,9 +31,6 @@ export default function Portfolio() {
           <div
             className="flex flex-col items-center justify-center gap-3 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
             data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="800"
-            data-aos-offset="200"
           >
             <div className="flex flex-row items-center gap-3 uppercase">
               <FontAwesomeIcon icon={faCode} className="text-violet-500" />
@@ -49,8 +46,6 @@ export default function Portfolio() {
                 key={index}
                 className="p-4 transition-all duration-200 border rounded-sm"
                 data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="800"
               >
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-xl font-semibold">

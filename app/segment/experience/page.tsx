@@ -37,8 +37,6 @@ export default function Experience() {
       <div
         className="flex flex-col items-center justify-center gap-3 mt-20 mb-5 sm:mt-0 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
         data-aos="fade-up"
-        data-aos-delay="100"
-        data-aos-offset="200"
       >
         <div className="flex flex-row items-center gap-3 uppercase">
           <FontAwesomeIcon icon={faTimeline} className="text-violet-500" />
