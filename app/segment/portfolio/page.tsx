@@ -24,7 +24,7 @@ import ProjectValues from "./values/project_values.json"
 
 export default function Portfolio() {
   return (
-    <div className="flex flex-col w-full h-auto pt-2 pb-28" id="portfolio">
+    <div className="flex flex-col w-full h-auto pt-2 mt-5 pb-28" id="portfolio">
       <div className=" md:p-6">
         <div className="sm:container">
           {/* Header */}
@@ -42,7 +42,7 @@ export default function Portfolio() {
           </div>
 
           {/* --------------------------- PROJECT CARDS ---------------------------- */}
-          <div className="grid grid-cols-1 gap-6 p-7 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 p-7 md:grid-cols-2 min-h-[200px]">
             {ProjectValues.map((project, index) => (
               <Card
                 key={index}

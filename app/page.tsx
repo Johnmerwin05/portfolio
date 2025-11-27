@@ -29,13 +29,27 @@ export default function IndexPage() {
     console.log(
       `Current theme: ${theme === "dark" ? "Dark mode" : "Light mode"}`
     )
-  }, [theme]) // This will run whenever the theme changes
+  }, [theme])
 
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
+      offset: 20,
     })
+
+    // Fix layout shift issues
+    setTimeout(() => {
+      AOS.refresh()
+    }, 500)
   }, [])
+
+  useEffect(() => {
+    const handleLoad = () => AOS.refresh()
+    window.addEventListener("load", handleLoad)
+    return () => window.removeEventListener("load", handleLoad)
+  }, [])
+
   const { is_dark } = GlobalStore()
 
   return (
