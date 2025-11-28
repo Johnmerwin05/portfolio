@@ -18,43 +18,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog"
 import { Separator } from "@/components/ui/separator"
 
 import ProjectValues from "./values/project_values.json"
 
 export default function Portfolio() {
-  const [open, setOpen] = useState(false)
-  const [selectedProject, setSelectedProject] = useState<any>(null)
-
-  const handleCardClick = (project: any) => {
-    setSelectedProject(project)
-    setOpen(true)
-  }
-
-  // Convert dynamic image paths
-  const getImages = (project: any) => {
-    if (!project) return []
-
-    if (Array.isArray(project.images_path)) {
-      return project.images_path
-    }
-
-    if (typeof project.images_path === "string") {
-      const count = project.images_num_web ?? 0
-      return Array.from({ length: count }, (_, index) => {
-        return `${project.images_path}/${index + 1}.jpg`
-      })
-    }
-
-    return []
-  }
-
   return (
     <div className="flex flex-col w-full h-auto pt-2 mt-5 pb-28" id="portfolio">
       <div className="md:p-6">
@@ -78,32 +46,27 @@ export default function Portfolio() {
             {ProjectValues.map((project, index) => (
               <Card
                 key={index}
-                onClick={() => handleCardClick(project)}
                 className="p-4 transition-all duration-200 border rounded-sm cursor-pointer hover:shadow-xl hover:-translate-y-1"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="800"
               >
                 <CardHeader>
-                  {(() => {
-                    const images = getImages(project)
-                    return images.length > 0 ? (
-                      <img
-                        src={images[0]}
-                        alt="Project Screenshot"
-                        className="object-cover w-full h-48 border rounded-lg shadow-md"
-                      />
-                    ) : (
-                      <p className="flex items-center justify-center w-full h-48 text-center text-gray-500 bg-gray-200 border rounded-lg shadow-md">
-                        No image available
-                      </p>
-                    )
-                  })()}
+                  {project.images_path ? (
+                    <img
+                      src={project.images_path}
+                      alt="Project Screenshot"
+                      className="object-cover w-full h-48 border rounded-lg shadow-md"
+                    />
+                  ) : (
+                    <p className="flex items-center justify-center w-full h-48 text-gray-500 bg-gray-200 border rounded-lg shadow-md">
+                      No image available
+                    </p>
+                  )}
                   <div className="mt-2"></div>
                   <CardTitle className="flex items-center gap-3 text-xl font-semibold">
                     {project.name}
                   </CardTitle>
-
                   {/* SHORT DESCRIPTION */}
                   <CardDescription>
                     <div className="flex flex-col items-start gap-2 text-sm md:flex-row md:items-center">
@@ -125,7 +88,6 @@ export default function Portfolio() {
                       <span>{project.type}</span>
                     </div>
                   </CardDescription>
-
                   <CardDescription className="text-xs text-gray-400 ">
                     <ul className="ml-4 space-y-1 list-disc">
                       {project.higlights?.map((highlight: any, i: number) => (
