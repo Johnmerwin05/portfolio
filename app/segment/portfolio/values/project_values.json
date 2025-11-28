@@ -19,7 +19,10 @@
     "type": "Full time project",
     "role": ["Full Stack Developer"],
     "source_code": [],
-    "images_path": "/images/ippmis",
+    "images_path": [
+      "/images/portfolio/ippms1.jpg",
+      "/images/portfolio/ippms2.png"
+    ],
     "images_num_web": 2,
     "higlights": [
       "Built and deployed the project from the ground up",
@@ -49,7 +52,7 @@
     "type": "Full time project",
     "role": ["Full Stack Developer"],
     "source_code": [],
-    "images_path": "/images/ippmis",
+    "images_path": ["/images/portfolio/simass1.png"],
     "images_num_web": 2,
     "higlights": [
       "Developed and deployed SIMASS to automate daily production processes",
@@ -60,11 +63,33 @@
     "isWebFirst": true
   },
   {
-    "name": "Scholar Management System",
-    "project_link": "",
+    "name": "Payment Gateway Integration",
+    "project_link": "https://kichieats.ph/",
     "project_logo": "images/system.png",
-    "description": "Laravel + VueJS + MySQL + Tailwind",
-    "long_description": "A comprehensive Scholarship Management System designed to automate scholar assessments and streamline the tracking of financial assistance. The system enables scholarship applicants and active scholars to take exams online, with automated evaluation and result recording. It also includes a dedicated module for managing and documenting cash assistance releases, ensuring transparency and organized distribution records. The platform centralizes scholar profiles, exam results, and financial logs, providing administrators with an efficient tool to oversee the entire scholarship lifecycle.",
+    "description": "Laravel + VueJS(Nuxt)",
+    "long_description": "An Inventory Management System designed to simplify inventory tracking and stock management. The system generates QR codes for each item, allowing for quick scanning and accurate monthly inventory checks. It also provides real-time updates on stock levels, item details, and movement history. With a responsive interface, the platform ensures efficient and user-friendly management of inventory across mobile, tablet, and desktop devices.",
+    "technology": ["Laravel", "Xendit", "CRM"],
+    "platform": ["Web"],
+    "status": ["Active"],
+    "type": "Freelance",
+    "role": ["Back-end Developer"],
+    "source_code": [],
+    "images_path": ["/images/portfolio/rnet1.png"],
+    "images_num_web": 1,
+    "higlights": [
+      "Developed a user-friendly website using Laravel, focusing on usability and functionality.",
+      "Integrated Xendit for seamless online bill payments.",
+      "Enabled real-time payment updates on the UISP CRM server.",
+      "Improved billing efficiency through streamlined payment processing."
+    ],
+    "isWebFirst": true
+  },
+  {
+    "name": "Medical Appointment System",
+    "project_link": "http://hrdotnet-dayone.intellismartinc.com:5173/",
+    "project_logo": "images/system.png",
+    "description": ".Net + React + Typescript",
+    "long_description": "A Medical Appointment System that allows clients to conveniently book appointments online and consult with healthcare professionals through the platform. The system also enables users to download their medical certificates directly, streamlining administrative processes. With centralized management for appointments, consultations, and patient records, the platform ensures efficiency, accuracy, and a user-friendly experience across mobile, tablet, and desktop devices.",
     "technology": [
       "Laravel",
       "VueJS",
@@ -72,20 +97,25 @@
       "Tailwind",
       "ShadCN UI",
       "InertiaJS",
-      "Typescript"
+      "Typescript",
+      "Twilio"
     ],
     "platform": ["Web"],
     "status": ["Completed"],
     "type": "Freelance",
     "role": ["Full Stack Developer"],
     "source_code": [],
-    "images_path": "/images/ordering",
-    "images_num_web": 2,
+    "images_path": [
+      "/images/portfolio/med3.jpg",
+      "/images/portfolio/med1.png",
+      "/images/portfolio/med2.png"
+    ],
+    "images_num_web": 3,
     "higlights": [
-      "Developed and launched the Scholarship Management System from scratch",
-      "Built automated online exams with real-time scoring",
-      "Implemented secure tracking for scholar cash assistance",
-      "Optimized the system for full mobile and desktop responsiveness"
+      "Developed and launched a Medical Appointment System for online bookings",
+      "Enabled clients to schedule appointments and conduct online consultations",
+      "Provided functionality to download medical certificates directly from system",
+      "Optimized the platform for seamless use on mobile, tablet, and desktop"
     ],
     "isWebFirst": true
   },
@@ -95,11 +125,13 @@
     "description": ".Net + C# + WPF",
     "long_description": "A fully featured Resort Management System that allows clients to conveniently book accommodations online with real-time availability. The system integrates a secure payment gateway for smooth and reliable transactions. It also provides automated email and SMS notifications to keep clients informed about booking confirmations, payment status, and updates. Designed with a responsive interface, the platform ensures a seamless booking experience across mobile, tablet, and desktop devices.",
     "technology": [
-      "Php",
-      "Bootstrap",
+      "Laravel",
+      "ReactJS",
       "MySQL",
-      "Jquery",
-      "Phpmyadmin",
+      "TailwindCSS",
+      "InertiaJS",
+      "ShadCN UI",
+      "Typescript",
       "Xendit",
       "MessageBird"
     ],
@@ -108,7 +140,7 @@
     "type": "Freelance",
     "role": ["Full Stack Developer"],
     "source_code": [],
-    "images_path": "/images/pos",
+    "images_path": ["/images/portfolio/resort1.jpg"],
     "images_num_web": 2,
     "higlights": [
       "Developed and launched an online Resort Management System",
@@ -138,7 +170,7 @@
     "type": "Freelance",
     "role": ["Full Stack Developer"],
     "source_code": [],
-    "images_path": "/images/antiscam",
+    "images_path": ["/images/portfolio/loan1.jpg"],
     "images_num_web": 0,
     "images_num_mobile": 5,
     "higlights": [
@@ -161,6 +193,7 @@
       "MySQL",
       "Jquery",
       "Phpmyadmin",
+      "Swal",
       "Composer"
     ],
     "platform": ["Web"],
@@ -168,7 +201,7 @@
     "type": "Freelance",
     "role": ["Full Stack Developer"],
     "source_code": [],
-    "images_path": "/images/plmun",
+    "images_path": ["/images/portfolio/diet1.jpg"],
     "images_num_web": 7,
     "higlights": [
       "Developed and deployed a Dietary Predicting System from scratch",
@@ -179,54 +212,32 @@
     "isWebFirst": true
   },
   {
-    "name": "Medical Appointment System",
-    "project_link": "http://hrdotnet-dayone.intellismartinc.com:5173/",
+    "name": "Scholar Management System",
+    "project_link": "",
     "project_logo": "images/system.png",
-    "description": ".Net + React + Typescript",
-    "long_description": "A Medical Appointment System that allows clients to conveniently book appointments online and consult with healthcare professionals through the platform. The system also enables users to download their medical certificates directly, streamlining administrative processes. With centralized management for appointments, consultations, and patient records, the platform ensures efficiency, accuracy, and a user-friendly experience across mobile, tablet, and desktop devices.",
-    "technology": ["Php", "Bootstrap", "MySQL", "Jquery", "Phpmyadmin"],
+    "description": "Laravel + VueJS + MySQL + Tailwind",
+    "long_description": "A comprehensive Scholarship Management System designed to automate scholar assessments and streamline the tracking of financial assistance. The system enables scholarship applicants and active scholars to take exams online, with automated evaluation and result recording. It also includes a dedicated module for managing and documenting cash assistance releases, ensuring transparency and organized distribution records. The platform centralizes scholar profiles, exam results, and financial logs, providing administrators with an efficient tool to oversee the entire scholarship lifecycle.",
+    "technology": [
+      "Php",
+      "Bootstrap",
+      "MySQL",
+      "Jquery",
+      "Phpmyadmin",
+      "Swal",
+      "Composer"
+    ],
     "platform": ["Web"],
     "status": ["Completed"],
     "type": "Freelance",
     "role": ["Full Stack Developer"],
     "source_code": [],
-    "images_path": "/images/dayone",
-    "images_num_web": 3,
+    "images_path": [],
+    "images_num_web": 2,
     "higlights": [
-      "Developed and launched a Medical Appointment System for online bookings",
-      "Enabled clients to schedule appointments and conduct online consultations",
-      "Provided functionality to download medical certificates directly from the system",
-      "Optimized the platform for seamless use on mobile, tablet, and desktop devices"
-    ],
-    "isWebFirst": true
-  },
-  {
-    "name": "Inventory Management System",
-    "project_link": "https://kichieats.ph/",
-    "project_logo": "images/system.png",
-    "description": "Laravel + VueJS(Nuxt)",
-    "long_description": "An Inventory Management System designed to simplify inventory tracking and stock management. The system generates QR codes for each item, allowing for quick scanning and accurate monthly inventory checks. It also provides real-time updates on stock levels, item details, and movement history. With a responsive interface, the platform ensures efficient and user-friendly management of inventory across mobile, tablet, and desktop devices.",
-    "technology": [
-      "Laravel",
-      "ReactJS",
-      "MySQL",
-      "TailwindCSS",
-      "InertiaJS",
-      "ShadCN UI",
-      "Typescript"
-    ],
-    "platform": ["Web"],
-    "status": ["Active"],
-    "type": "Freelance",
-    "role": ["Full Stack Developer"],
-    "source_code": [],
-    "images_path": "/images/kichi",
-    "images_num_web": 1,
-    "higlights": [
-      "Developed and launched an Inventory Management System from scratch",
-      "Implemented QR code generation for fast and accurate monthly inventory tracking",
-      "Enabled real-time stock monitoring and updates for all items",
-      "Optimized the system for seamless use on mobile, tablet, and desktop devices"
+      "Developed and launched the Scholarship Management System from scratch",
+      "Built automated online exams with real-time scoring",
+      "Implemented secure tracking for scholar cash assistance",
+      "Optimized the system for full mobile and desktop responsiveness"
     ],
     "isWebFirst": true
   }
