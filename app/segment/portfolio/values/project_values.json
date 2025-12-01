@@ -67,7 +67,7 @@
     "long_description": "An Inventory Management System designed to simplify inventory tracking and stock management. The system generates QR codes for each item, allowing for quick scanning and accurate monthly inventory checks. It also provides real-time updates on stock levels, item details, and movement history. With a responsive interface, the platform ensures efficient and user-friendly management of inventory across mobile, tablet, and desktop devices.",
     "technology": ["Laravel", "Xendit", "CRM"],
     "platform": ["Web"],
-    "status": ["Active"],
+    "status": ["Completed"],
     "type": "Freelance",
     "role": ["Back-end Developer"],
     "source_code": [],
