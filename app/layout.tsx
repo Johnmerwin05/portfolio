@@ -1,5 +1,4 @@
 import "@/styles/globals.css"
-import { useEffect } from "react"
 import { Metadata } from "next"
 
 import { siteConfig } from "@/config/site"
@@ -32,19 +31,34 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-        <head />
-        <body className={cn(" font-sans antialiased", fontSans.variable)}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="w-auto min-h-screen">
-              <SiteHeader />
-              {children}
-            </div>
-            <TailwindIndicator />
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body className={cn("font-sans antialiased", fontSans.variable)}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {/* ENTIRE APP BACKGROUND */}
+          <div
+            className="relative w-auto min-h-screen 
+            bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] 
+            from-[#111827] via-[#111827] to-[#111827]"
+          >
+            {/* GLOBAL BOX PATTERN */}
+            <div
+              className="absolute inset-0 pointer-events-none -z-0 opacity-20"
+              style={{
+                backgroundImage:
+                  "radial-gradient(#ffffff20 2px, transparent 2px)",
+                backgroundSize: "15px 15px",
+              }}
+            />
+
+            {/* APP CONTENT */}
+            <SiteHeader />
+            {children}
+          </div>
+
+          <TailwindIndicator />
+        </ThemeProvider>
+      </body>
+    </html>
   )
 }

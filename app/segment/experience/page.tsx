@@ -35,7 +35,7 @@ export default function Experience() {
     <div className="container pt-8 sm:pb-28" id="experience">
       {/* Header */}
       <div
-        className="flex flex-col items-center justify-center gap-3 mt-20 mb-5 sm:mt-0 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
+        className="flex flex-col items-center justify-center gap-3 mt-20 mb-5 text-gray-200 sm:mt-0 sm:text-4xl md:flex-row md:text-2xl md:gap-5"
         data-aos="fade-up"
       >
         <div className="flex flex-row items-center gap-3 uppercase">

@@ -22,29 +22,30 @@ export function SiteHeader() {
         </button>
 
         {/* Desktop Contact Info */}
-        <div className="items-center hidden space-x-8 text-sm sm:flex">
+        <div className="items-center hidden pt-5 space-x-8 text-xs sm:flex ps-5">
           <a
             href="tel:+639271789423"
-            className="flex items-center gap-2 transition hover:text-blue-500 dark:hover:text-blue-400"
+            className="flex items-center gap-2 text-gray-200 transition"
           >
-            <Phone size={18} /> +63 927 178 9423
+            <Phone size={18} className="text-red-500" /> +63 927 178 9423
           </a>
 
           <a
             href="mailto:merwin.cielo5@gmail.com"
-            className="flex items-center gap-2 transition hover:text-blue-500 dark:hover:text-blue-400"
+            className="flex items-center gap-2 text-gray-200 transition"
           >
-            <Mail size={18} /> merwin.cielo5@gmail.com
+            <Mail size={18} className="text-green-500" />{" "}
+            merwin.cielo5@gmail.com
           </a>
 
           {/* Light/Dark Mode */}
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </div>
       </div>
 
       {/* Mobile Menu */}
       {open && (
-        <div className="flex flex-col px-6 pb-4 space-y-4 text-sm sm:hidden">
+        <div className="items-center hidden pt-5 space-x-8 text-xs sm:flex ps-5">
           <a
             href="tel:+639123456789"
             onClick={() => setOpen(false)}
@@ -62,9 +63,7 @@ export function SiteHeader() {
           </a>
 
           {/* Theme toggle for mobile */}
-          <div className="pt-2">
-            <ThemeToggle />
-          </div>
+          <div className="pt-2">{/* <ThemeToggle /> */}</div>
         </div>
       )}
     </header>

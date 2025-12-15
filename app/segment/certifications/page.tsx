@@ -21,7 +21,7 @@ export default function Certifications() {
         data-aos-duration="800"
         data-aos-offset="200"
       >
-        <div className="flex flex-row items-center gap-3 uppercase">
+        <div className="flex flex-row items-center gap-3 text-gray-300 uppercase">
           <FontAwesomeIcon icon={faCertificate} className="text-violet-500" />
           <p>Certifications</p>
           <Badge variant="secondary">
@@ -35,24 +35,26 @@ export default function Certifications() {
         {certificationData.certifications.map((cert, index) => (
           <Card
             key={index}
-            className="transition-all duration-200 border rounded-sm cursor-pointer hover:shadow-lg"
+            className="transition-all duration-200 bg-[#081635] border-none rounded-sm cursor-pointer hover:shadow-lg"
             onClick={() => setSelectedImage(cert.image)}
             data-aos="fade-up"
             data-aos-delay={100 + index * 100}
             data-aos-duration="800"
           >
             <CardContent className="p-4">
-              <div className="flex flex-col items-center gap-3 text-center">
+              <div className="flex flex-col gap-3">
                 <img
                   src={cert.image}
                   alt={cert.name}
                   className="object-cover w-full h-40 rounded-md"
                 />
-                <p className="text-lg font-semibold">{cert.name}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-lg font-semibold text-gray-200">
+                  {cert.name}
+                </p>
+                <p className="text-xs text-gray-500 ">{cert.date}</p>
+                <p className="text-xs text-gray-400 dark:text-gray-400">
                   {cert.description}
                 </p>
-                <p className="text-xs opacity-70">{cert.date}</p>
               </div>
             </CardContent>
           </Card>

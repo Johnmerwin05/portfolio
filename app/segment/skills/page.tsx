@@ -27,11 +27,11 @@ export default function Skills() {
                 key={i}
                 className="flex flex-col items-center gap-2 text-center"
               >
-                <div className="flex items-center justify-center p-4 bg-gray-100 rounded-full shadow-sm dark:bg-gray-100 w-14 h-14">
+                <div className="flex items-center justify-center p-4 bg-gray-300 rounded-full shadow-sm dark:bg-gray-100 w-14 h-14">
                   <img
                     src={tech.image}
                     alt={tech.name}
-                    className="object-contain w-8 h-8"
+                    className="object-contain w-8 h-8 "
                   />
                 </div>
 
@@ -51,7 +51,7 @@ export default function Skills() {
         className="flex flex-col items-center justify-center gap-3 mt-20 sm:mt-0 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
         data-aos="fade-up"
       >
-        <div className="flex flex-row items-center gap-3 uppercase">
+        <div className="flex flex-row items-center gap-3 text-gray-300 uppercase">
           <FontAwesomeIcon icon={faToolbox} className="text-violet-500" />
           <p>Tech Stack</p>
           <Badge variant="secondary">Flexible</Badge>

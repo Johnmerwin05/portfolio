@@ -29,24 +29,24 @@ export default function Portfolio() {
         <div className="sm:container">
           {/* Header */}
           <div
-            className="flex flex-col items-center justify-center gap-3 sm:text-4xl md:flex-row md:text-2xl dark:text-white md:gap-5"
+            className="flex flex-col items-center justify-center gap-3 text-gray-200 sm:text-4xl md:flex-row md:text-xl md:gap-5"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="800"
           >
             <div className="flex flex-row items-center gap-3 uppercase">
-              <FontAwesomeIcon icon={faCode} className="text-violet-500" />
+              <FontAwesomeIcon icon={faCode} className="text-indigo-500" />
               <p>Portfolio</p>
               <Badge variant="secondary">{ProjectValues.length} Projects</Badge>
             </div>
           </div>
 
           {/* --------------------------- PROJECT CARDS ---------------------------- */}
-          <div className="grid grid-cols-1 gap-6 p-7 md:grid-cols-2 min-h-[200px]">
+          <div className="grid grid-cols-1 gap-6 p-7 md:grid-cols-2 min-h-[200px] ">
             {ProjectValues.map((project, index) => (
               <Card
                 key={index}
-                className="p-4 transition-all duration-200 border rounded-sm cursor-pointer hover:shadow-xl hover:-translate-y-1"
+                className="p-4 transition-all duration-200 border-none rounded-sm cursor-pointer hover:shadow-xl hover:-translate-y-1 bg-[#081635]"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="800"
@@ -69,26 +69,26 @@ export default function Portfolio() {
                   </CardTitle>
                   {/* SHORT DESCRIPTION */}
                   <CardDescription>
-                    <div className="flex flex-col items-start gap-2 text-sm md:flex-row md:items-center">
+                    <div className="flex flex-col items-start gap-2 text-sm text-gray-200 md:flex-row md:items-center">
                       <span>{project.platform}</span>
                       <Separator
                         orientation="vertical"
-                        className="hidden h-4 bg-gray-400 md:block"
+                        className="hidden h-4 bg-gray-300 md:block"
                       />
                       <span>{project.status}</span>
                       <Separator
                         orientation="vertical"
-                        className="hidden h-4 bg-gray-400 md:block"
+                        className="hidden h-4 bg-gray-300 md:block"
                       />
                       <span>{project.role}</span>
                       <Separator
                         orientation="vertical"
-                        className="hidden h-4 bg-gray-400 md:block"
+                        className="hidden h-4 bg-gray-300 md:block"
                       />
                       <span>{project.type}</span>
                     </div>
                   </CardDescription>
-                  <CardDescription className="text-xs text-gray-400 ">
+                  <CardDescription className="text-xs text-gray-300 ">
                     <ul className="ml-4 space-y-1 list-disc">
                       {project.higlights?.map((highlight: any, i: number) => (
                         <li key={i}>{highlight}</li>
@@ -101,7 +101,7 @@ export default function Portfolio() {
                   {/* TECHNOLOGY BADGES */}
                   <div className="flex flex-wrap gap-2">
                     {project.technology?.map((tech: any, i: number) => (
-                      <Badge key={i} variant="outline">
+                      <Badge key={i} variant="outline" className="text-white">
                         {tech}
                       </Badge>
                     ))}
