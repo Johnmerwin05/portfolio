@@ -1,6 +1,24 @@
 {
   "certifications": [
     {
+      "name": "Build a Backend REST API with Node JS from Scratch",
+      "date": "January 2026",
+      "description": "Completed a hands-on course on building a Backend REST API with Node.js from scratch, gaining practical experience in creating scalable endpoints, handling requests, and integrating backend services.",
+      "image": "/images/certificates/node.jpg"
+    },
+    {
+      "name": "CSS, Bootstrap And JavaScript And PHP Complete Frontend and Backend",
+      "date": "January 2026",
+      "description": "Completed a full-stack web development course covering CSS, Bootstrap, JavaScript, and PHP, gaining practical skills in designing responsive front-end interfaces and building dynamic, data-driven backend applications.",
+      "image": "/images/certificates/php.jpg"
+    },
+    {
+      "name": "Wordpress Web Development for Absolute Beginner Zero to Hero",
+      "date": "January 2026",
+      "description": "Completed an intensive training on WordPress Web Development for Absolute Beginners, learning how to build, customize, and manage fully functional websites from scratch using WordPress tools, themes, and plugins.",
+      "image": "/images/certificates/wordpress.jpg"
+    },
+    {
       "name": "Search Engine Optimization (SEO) - Online Course",
       "date": "September 2022",
       "description": "Completed a comprehensive online course on Search Engine Optimization (SEO), gaining practical knowledge in improving website visibility, optimizing content, and driving organic traffic effectively.",
