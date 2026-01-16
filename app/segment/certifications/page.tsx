@@ -48,9 +48,7 @@ export default function Certifications() {
                   alt={cert.name}
                   className="object-cover w-full h-40 rounded-md"
                 />
-                <p className="text-lg font-semibold text-gray-200">
-                  {cert.name}
-                </p>
+                <p className="text-lg font-normal text-gray-200">{cert.name}</p>
                 <p className="text-xs text-gray-500 ">{cert.date}</p>
                 <p className="text-xs text-gray-400 dark:text-gray-400">
                   {cert.description}

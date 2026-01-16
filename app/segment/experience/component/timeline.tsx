@@ -58,9 +58,11 @@ const Timeline = ({ events }: TimelineProps) => {
               <Card className="p-4 transition-all duration-200 bg-[#081635] border-none rounded-sm shadow-sm">
                 <CardHeader>
                   {/* Title (same as Project card) */}
-                  <CardTitle className="text-xl font-semibold text-gray-200">
+                  <CardTitle className="text-xl font-normal text-gray-200">
                     {event.title}
-                    <div className="text-sm font-medium">{event.sub_title}</div>
+                    <div className="text-sm font-medium text-gray-400">
+                      {event.sub_title}
+                    </div>
                   </CardTitle>
 
                   {/* Date (same styling as the small description in Project card) */}

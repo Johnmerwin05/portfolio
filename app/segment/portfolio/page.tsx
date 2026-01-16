@@ -64,7 +64,7 @@ export default function Portfolio() {
                     </p>
                   )}
                   <div className="mt-2"></div>
-                  <CardTitle className="flex items-center gap-3 text-xl font-semibold">
+                  <CardTitle className="flex items-center gap-3 text-xl font-normal text-gray-200">
                     {project.name}
                   </CardTitle>
                   {/* SHORT DESCRIPTION */}

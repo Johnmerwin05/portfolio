@@ -1,6 +1,36 @@
 {
   "certifications": [
     {
+      "name": "Relational Databases & SQL - Complete Guide for Developers",
+      "date": "January 2026",
+      "description": "Completed a comprehensive course on relational databases and SQL, gaining practical experience in writing queries, designing schemas, and working with structured data.",
+      "image": "/images/certificates/5.jpg"
+    },
+    {
+      "name": "Learn Github Actions for CI,CD DevOps Pipelines",
+      "date": "January 2026",
+      "description": "Completed a practical course on GitHub Actions, gaining experience in automating CI/CD workflows and implementing DevOps pipelines.",
+      "image": "/images/certificates/4.jpg"
+    },
+    {
+      "name": "Learn Git & GitHub for Beginners Practical Workflow (2026)",
+      "date": "January 2026",
+      "description": "Completed a practical Git & GitHub course covering beginner fundamentals, version control workflows, and collaborative development practices.",
+      "image": "/images/certificates/3.jpg"
+    },
+    {
+      "name": "Hands On React JS From Beginner to Expert",
+      "date": "January 2026",
+      "description": "Completed a hands-on React JS course covering beginner to advanced concepts, gaining practical experience in component-based development and state management.",
+      "image": "/images/certificates/2.jpg"
+    },
+    {
+      "name": "Docker Deep Dive- Build, Ship, and Run Containers",
+      "date": "January 2026",
+      "description": "Completed an in-depth hands-on course on Docker, gaining practical experience in building images, managing containers, and deploying applications using containerized environments.",
+      "image": "/images/certificates/1.jpg"
+    },
+    {
       "name": "Build a Backend REST API with Node JS from Scratch",
       "date": "January 2026",
       "description": "Completed a hands-on course on building a Backend REST API with Node.js from scratch, gaining practical experience in creating scalable endpoints, handling requests, and integrating backend services.",
